@@ -15,11 +15,11 @@ This project is a simple AI-powered object detection microservice. It allows you
 
 ## Project Structure
 
-* ai-backend: Contains the main backend code for object detection (`app.py`)
-* ui-backend: Contains the web interface to upload images and view results (`app.py`)
-* uploads: Folder where you can place images to be processed
-* outputs: Folder where processed images and detection results are saved
-* docker-compose.yml: File to run the service using Docker
+* **ai-backend**: Contains the main backend code for object detection (`app.py`)
+* **ui-backend**: Contains the web interface to upload images and view results (`app.py`)
+* **uploads**: Folder where you can place images to be processed
+* **outputs**: Folder where processed images and detection results are saved
+* **docker-compose.yml**: File to run the service using Docker
 
 ---
 
@@ -38,15 +38,15 @@ This project is a simple AI-powered object detection microservice. It allows you
 1. Clone the repository.
 2. Run the project using Docker Compose:
 
-bash
+```bash
 docker-compose up --build
-
+```
 
 3. Open your browser and go to:
 
-
+```
 http://localhost:5001
-
+```
 
 4. Place images in the `uploads` folder. Processed results will appear in the `outputs` folder.
 
@@ -54,34 +54,34 @@ http://localhost:5001
 
 1. Install dependencies for AI backend:
 
-bash
+```bash
 cd ai-backend
 pip install -r requirements.txt
-
+```
 
 2. Start the AI backend:
 
-bash
+```bash
 python app.py
-
+```
 
 3. Install dependencies for UI backend:
 
-bash
+```bash
 cd ../ui-backend
 pip install -r requirements.txt
-
+```
 
 4. Start the UI backend:
 
-bash
+```bash
 python app.py
-
+```
 
 5. Open your browser and go to `http://localhost:5001`
 6. Place images in the `uploads` folder and check the processed images in the `outputs` folder.
 
-> Note: Both backends must be running for the project to work properly.
+> **Note:** Both backends must be running for the project to work properly.
 
 ---
 
