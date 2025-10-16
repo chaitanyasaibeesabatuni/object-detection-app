@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ai-backend:
+    build: ./ai-backend
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs
+    restart: unless-stopped
+
+  ui-backend:
+    build: ./ui-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./outputs:/app/outputs
+    depends_on:
+      - ai-backend
+    restart: unless-stopped
