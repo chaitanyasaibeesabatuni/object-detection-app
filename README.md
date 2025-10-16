@@ -111,4 +111,5 @@ If you want to contribute:
 
 ## License
 
-This project is open source and free to use for personal or commercial purposes.
+This project is intended for personal and educational assessment purposes only.
+Redistribution, modification, or commercial use of this code is not permitted without explicit permission from the author.
